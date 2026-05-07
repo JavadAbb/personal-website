@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio website for Javad Abbaszadeh, a data analytics, machine learning, and iOS development graduate based in Turin, Italy."
+    />
+    <title>Javad Abbaszadeh | Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Javad Abbaszadeh home">
+          <span class="brand-mark" aria-hidden="true">JA</span>
+          <span>Javad Abbaszadeh</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span class="menu-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <div class="nav-links" id="site-menu" data-menu>
+          <a href="#profile">Profile</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-band" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Data analytics, machine learning, and iOS development</p>
+          <h1>Javad Abbaszadeh</h1>
+          <p class="hero-lede">
+            Master's student in Stochastics and Data Science in Turin, Italy, building practical
+            data products across predictive modeling, API-based analysis, databases, and SwiftUI apps.
+          </p>
+          <div class="hero-actions" aria-label="Primary contact links">
+            <a class="button primary" href="mailto:javadabb.stu@gmail.com">Email Javad</a>
+            <a class="button ghost" href="assets/Javad_Abbaszadeh_CV.pdf" target="_blank" rel="noreferrer">Open CV</a>
+          </div>
+          <dl class="hero-facts" aria-label="Quick facts">
+            <div>
+              <dt>Based in</dt>
+              <dd>Turin, Italy</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Stochastics and Data Science</dd>
+            </div>
+            <div>
+              <dt>Languages</dt>
+              <dd>Persian, Turkish, English, Italian</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-visual-wrap" aria-label="Portfolio visual showing data, code, and city signals">
+          <img class="hero-visual" src="assets/portfolio-visual.png" alt="Abstract data science dashboard visual for Javad Abbaszadeh" />
+        </div>
+      </section>
+
+      <section class="profile section-band" id="profile">
+        <div class="section-intro">
+          <p class="eyebrow">Professional profile</p>
+          <h2>Turning messy data into decisions and useful products.</h2>
+        </div>
+        <div class="profile-grid">
+          <p>
+            Javad combines statistical modeling, data analytics, and product-minded development.
+            His work spans predictive healthcare modeling, air-quality data pipelines, database
+            systems, clustering analysis, and SwiftUI applications designed with real user behavior
+            in mind.
+          </p>
+          <p>
+            He is currently pursuing a Master's Degree in Stochastics and Data Science at
+            Universita di Torino, with training in probability theory, statistical inference,
+            stochastic processes, machine learning, and computational methods for complex data.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects section-band" id="projects">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects with data pipelines, models, and product thinking.</h2>
+          </div>
+          <div class="segmented-control" role="group" aria-label="Filter projects">
+            <button class="is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="data" aria-pressed="false">Data</button>
+            <button type="button" data-filter="ml" aria-pressed="false">ML</button>
+            <button type="button" data-filter="ios" aria-pressed="false">iOS</button>
+          </div>
+        </div>
+
+        <div class="project-grid" data-project-grid>
+          <article class="project-card" data-category="ml data">
+            <div class="project-topline">
+              <span>Machine Learning</span>
+              <span>Python</span>
+            </div>
+            <h3>Diabetes Prediction Using Machine Learning</h3>
+            <p>
+              Built a healthcare prediction model on 100,000 patient records for a bachelor's thesis,
+              comparing Logistic Regression, Random Forest, and XGBoost after EDA and preprocessing.
+            </p>
+            <ul class="tag-list" aria-label="Project skills">
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Seaborn</li>
+              <li>XGBoost</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="data">
+            <div class="project-topline">
+              <span>API Pipeline</span>
+              <span>2024</span>
+            </div>
+            <h3>PM2.5 Air Quality: Milan vs Paris</h3>
+            <p>
+              Created an OpenAQ API pipeline to collect, clean, analyze, and visualize PM2.5
+              pollution trends for Milan and Paris using Matplotlib and Seaborn.
+            </p>
+            <ul class="tag-list" aria-label="Project skills">
+              <li>OpenAQ API</li>
+              <li>EDA</li>
+              <li>Matplotlib</li>
+              <li>Python</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="data">
+            <div class="project-topline">
+              <span>Database Design</span>
+              <span>SQL</span>
+            </div>
+            <h3>Hotel Management Database System</h3>
+            <p>
+              Designed a relational hotel operations database covering guests, reservations,
+              payments, and staff assignments with ER models, relational schemas, and SQL queries.
+            </p>
+            <ul class="tag-list" aria-label="Project skills">
+              <li>ER modeling</li>
+              <li>SQL</li>
+              <li>Relational schemas</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="ml data">
+            <div class="project-topline">
+              <span>Clustering</span>
+              <span>MATLAB</span>
+            </div>
+            <h3>Data Mining and Clustering Analysis</h3>
+            <p>
+              Implemented K-means and K-medoids for datasets including Iris and voting data,
+              applying dimensionality reduction and distance matrices to evaluate structure.
+            </p>
+            <ul class="tag-list" aria-label="Project skills">
+              <li>K-means</li>
+              <li>K-medoids</li>
+              <li>Distance matrices</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="ios data">
+            <div class="project-topline">
+              <span>SwiftUI App</span>
+              <span>Health</span>
+            </div>
+            <h3>StillEye: Sleep Improvement App</h3>
+            <p>
+              Developed a data-driven iOS app to improve sleep quality through visual color
+              patterns and behavioral research in an international Academy team.
+            </p>
+            <ul class="tag-list" aria-label="Project skills">
+              <li>Swift</li>
+              <li>SwiftUI</li>
+              <li>User research</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="ios">
+            <div class="project-topline">
+              <span>SwiftUI App</span>
+              <span>Culture</span>
+            </div>
+            <h3>Sofreh: Persian Food and Culture Discovery</h3>
+            <p>
+              Built an iOS experience introducing Persian cuisine and culture, integrating recipe
+              APIs and personalized recommendations based on explored Iranian cities.
+            </p>
+            <ul class="tag-list" aria-label="Project skills">
+              <li>Recipe APIs</li>
+              <li>Recommendations</li>
+              <li>SwiftUI</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience section-band" id="experience">
+        <div class="section-intro">
+          <p class="eyebrow">Experience and education</p>
+          <h2>A path through analytics, product teams, and advanced statistics.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <p class="time-range">Nov 2025 - Present</p>
+            <h3>Master's Degree in Stochastics and Data Science</h3>
+            <p class="organization">Universita di Torino, Turin</p>
+            <p>Probability, statistical inference, stochastic processes, machine learning, and computational data methods.</p>
+          </article>
+          <article class="timeline-item">
+            <p class="time-range">Sep 2023 - Jun 2024</p>
+            <h3>iOS Developer Trainee</h3>
+            <p class="organization">Apple Developer Academy, Naples</p>
+            <p>Developed iOS, iPadOS, watchOS, and tvOS applications with Swift and SwiftUI, including data collection and visualization features.</p>
+          </article>
+          <article class="timeline-item">
+            <p class="time-range">Nov 2022 - Nov 2025</p>
+            <h3>Bachelor's Degree in Data Analytics</h3>
+            <p class="organization">Universita Luigi Vanvitelli, Caserta</p>
+            <p>Focused on statistics, machine learning, Python, R, data mining, statistical inference, and database systems.</p>
+          </article>
+          <article class="timeline-item">
+            <p class="time-range">Sep 2020 - Sep 2021</p>
+            <h3>Data Analyst Intern</h3>
+            <p class="organization">Azar Pardaz Shargh, Tabriz</p>
+            <p>Extracted and structured raw business data to reveal operational trends and sharpen data processing skills.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section-band" id="skills">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Technical stack</p>
+            <h2>Practical tools for analysis, modeling, and app delivery.</h2>
+          </div>
+        </div>
+        <div class="skill-columns">
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <p>Python, R, MATLAB, Swift, SwiftUI</p>
+          </article>
+          <article class="skill-card">
+            <h3>Data Analysis</h3>
+            <p>EDA, data cleaning, feature analysis, preprocessing, visualization, missing values, outlier detection</p>
+          </article>
+          <article class="skill-card">
+            <h3>Machine Learning</h3>
+            <p>Logistic Regression, Random Forest, XGBoost, K-means, K-medoids, clustering evaluation</p>
+          </article>
+          <article class="skill-card">
+            <h3>Databases</h3>
+            <p>SQL, database design, entity-relationship modeling, relational schemas</p>
+          </article>
+          <article class="skill-card">
+            <h3>Research</h3>
+            <p>Problem discovery, user research, surveys, data-driven decision making, statistical reasoning</p>
+          </article>
+          <article class="skill-card">
+            <h3>Communication</h3>
+            <p>Technical presentations, Keynote, PowerPoint, and multidisciplinary collaboration</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="recognition section-band" id="recognition">
+        <div class="recognition-grid">
+          <div>
+            <p class="eyebrow">Honors and service</p>
+            <h2>Scholarships, mentoring, and community learning.</h2>
+          </div>
+          <div class="recognition-list">
+            <article>
+              <h3>Scholarships and certificates</h3>
+              <p>AdisurCampania Scholarship, EDISU Piemonte Scholarship, Meritevoli Scholarship, and Apple Developer Academy Certificate and Scholarship.</p>
+            </article>
+            <article>
+              <h3>Programming Instructor</h3>
+              <p>Volunteered at Ostad Shahriar Elementary School in Marand, teaching basic programming concepts and computational thinking.</p>
+            </article>
+            <article>
+              <h3>Languages</h3>
+              <p>Persian and Turkish native speaker; English B2; Italian B1 working proficiency.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-band" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Open to data science, analytics, and product-focused collaborations.</h2>
+      </div>
+      <address class="contact-list">
+        <a href="mailto:javadabb.stu@gmail.com">javadabb.stu@gmail.com</a>
+        <a href="tel:+393444323302">+39 344 432 3302</a>
+        <a href="https://www.linkedin.com/in/javad-abbaszadeh-38052825a?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/JavadAbb" target="_blank" rel="noreferrer">GitHub</a>
+      </address>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
